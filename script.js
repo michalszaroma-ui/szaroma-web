@@ -2,8 +2,10 @@
   "use strict";
 
 
-  // Twoj adres /exec z Apps Script. Ten sam wpisz w action formularza.
-  var SHEET_ENDPOINT = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+  // Adres /exec z Apps Script. Obsluguje formularz i opinie.
+  // Po kazdej zmianie kodu w .gs zrob Wdroz > Zarzadzaj wdrozeniami > nowa wersja,
+  // inaczej strona nadal korzysta ze starej wersji.
+  var SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbzhg-xEK6CcXGCT258LMYA1ZQ1EK6ciVCxklUbZ_CU9QnL2oKmCtJ1GzsQpITay7yF1/exec";
 
 
   // Language switch. Anything with data-pl and data-en gets swapped,
@@ -233,6 +235,8 @@
   }
 
   if (form) {
+    form.action = SHEET_ENDPOINT;
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var msg = currentMessages();
@@ -242,7 +246,7 @@
       status.textContent = msg.sending;
       status.className = "form-status";
 
-      fetch(form.action, {
+      fetch(SHEET_ENDPOINT, {
         method: "POST",
         body: new FormData(form),
         headers: { Accept: "application/json" }
@@ -274,7 +278,7 @@
   // rather than a deploy.
   var quoteBox = document.getElementById("quotes");
 
-  if (quoteBox && SHEET_ENDPOINT.indexOf("YOUR_DEPLOYMENT_ID") === -1) {
+  if (quoteBox) {
     fetch(SHEET_ENDPOINT)
       .then(function (response) { return response.json(); })
       .then(function (reviews) {

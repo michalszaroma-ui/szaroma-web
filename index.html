@@ -4,22 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Swap these four URLs for the real domain before going live -->
 <title>Strony internetowe Dublin | Szaroma Web</title>
 <meta name="description" content="Tworzenie stron internetowych dla malych firm w Dublinie i calej Irlandii. Strony dwujezyczne, mobilne, z konfiguracja SEO. Od 650 euro.">
-<link rel="canonical" href="https://szaromaweb.netlify.app/">
+<link rel="canonical" href="https://szaroma-web.pages.dev/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:title" content="Strony internetowe Dublin | Szaroma Web">
 <meta property="og:description" content="Tworzenie stron internetowych dla malych firm w Dublinie i calej Irlandii. Strony dwujezyczne, mobilne, z konfiguracja SEO.">
-<meta property="og:url" content="https://szaromaweb.netlify.app/">
-<meta property="og:image" content="https://szaromaweb.netlify.app/assets/og-image.png">
+<meta property="og:url" content="https://szaroma-web.pages.dev/">
+<meta property="og:image" content="https://szaroma-web.pages.dev/assets/og-image.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Strony internetowe Dublin | Szaroma Web">
 <meta name="twitter:description" content="Tworzenie stron internetowych dla malych firm w Dublinie i calej Irlandii.">
-<meta name="twitter:image" content="https://szaromaweb.netlify.app/assets/og-image.png">
+<meta name="twitter:image" content="https://szaroma-web.pages.dev/assets/og-image.png">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9881;</text></svg>">
 
@@ -354,11 +353,8 @@
       </ul>
     </div>
 
-    <!-- Idzie do Apps Script. Podmien YOUR_DEPLOYMENT_ID tu i w script.js.
-         Nie dodawaj naglowka Content-Type, bo Apps Script nie obsluzy preflightu. -->
-    <form class="form reveal" id="contact-form"
-          action="https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"
-          method="POST" novalidate>
+    <!-- Adres formularza ustawia script.js ze stalej SHEET_ENDPOINT. -->
+    <form class="form reveal" id="contact-form" method="POST" novalidate>
       <div class="field">
         <label for="name" data-pl="Imie" data-en="Name">Imie</label>
         <input type="text" id="name" name="name" required autocomplete="name">
