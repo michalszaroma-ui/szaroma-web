@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Swap these four URLs for the real domain before going live -->
+<title>Strony internetowe Dublin | Szaroma Web</title>
+<meta name="description" content="Tworzenie stron internetowych dla malych firm w Dublinie i calej Irlandii. Strony dwujezyczne, mobilne, z konfiguracja SEO. Od 650 euro.">
+<link rel="canonical" href="https://szaromaweb.netlify.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Strony internetowe Dublin | Szaroma Web">
+<meta property="og:description" content="Tworzenie stron internetowych dla malych firm w Dublinie i calej Irlandii. Strony dwujezyczne, mobilne, z konfiguracja SEO.">
+<meta property="og:url" content="https://szaromaweb.netlify.app/">
+<meta property="og:image" content="https://szaromaweb.netlify.app/assets/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Strony internetowe Dublin | Szaroma Web">
+<meta name="twitter:description" content="Tworzenie stron internetowych dla malych firm w Dublinie i calej Irlandii.">
+<meta name="twitter:image" content="https://szaromaweb.netlify.app/assets/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9881;</text></svg>">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main" data-pl="Przejdz do tresci" data-en="Skip to content">Przejdz do tresci</a>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-text">Szaroma<span class="accent">Web</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Menu">
+      <a href="#uslugi"   data-pl="Uslugi"     data-en="Services">Uslugi</a>
+      <a href="#realizacje" data-pl="Realizacje" data-en="Work">Realizacje</a>
+      <a href="#cennik"   data-pl="Cennik"     data-en="Pricing">Cennik</a>
+      <a href="#jak"      data-pl="Jak to dziala" data-en="Process">Jak to dziala</a>
+      <a href="#kontakt"  class="nav-cta" data-pl="Kontakt" data-en="Contact">Kontakt</a>
+    </nav>
+
+    <!-- Language switch -->
+    <div class="lang" role="group" aria-label="Jezyk / Language">
+      <button type="button" class="lang-btn is-active" data-lang="pl">PL</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="wrap hero-inner">
+    <p class="eyebrow reveal"
+       data-pl="Dublin, Irlandia"
+       data-en="Dublin, Ireland">Dublin, Irlandia</p>
+
+    <h1 class="reveal"
+        data-pl="Strony internetowe dla malych firm"
+        data-en="Websites for small businesses">Strony internetowe dla malych firm</h1>
+
+    <p class="hero-sub reveal"
+       data-pl="Buduje szybkie, mobilne strony po polsku i po angielsku. Od pierwszej rozmowy do uruchomienia zajmuje sie wszystkim. Bez szablonow, bez abonamentow na platformy, bez ukrytych kosztow."
+       data-en="I build fast, mobile-friendly websites in Polish and English. From the first conversation to launch, I handle everything. No templates, no platform subscriptions, no hidden costs.">
+       Buduje szybkie, mobilne strony po polsku i po angielsku. Od pierwszej rozmowy do uruchomienia zajmuje sie wszystkim. Bez szablonow, bez abonamentow na platformy, bez ukrytych kosztow.</p>
+
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#cennik" data-pl="Zobacz cennik" data-en="See pricing">Zobacz cennik</a>
+      <a class="btn btn-ghost" href="#realizacje" data-pl="Zobacz realizacje" data-en="See my work">Zobacz realizacje</a>
+    </div>
+
+    <ul class="hero-stats reveal">
+      <li><strong>650&nbsp;&euro;</strong><span data-pl="cena od" data-en="price from">cena od</span></li>
+      <li><strong>PL / EN</strong><span data-pl="dwujezycznie" data-en="bilingual">dwujezycznie</span></li>
+      <li><strong>100%</strong><span data-pl="mobilnie" data-en="mobile ready">mobilnie</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="uslugi">
+  <div class="wrap">
+    <p class="section-tag reveal" data-pl="01 / Uslugi" data-en="01 / Services">01 / Uslugi</p>
+    <h2 class="reveal" data-pl="Co robie" data-en="What I do">Co robie</h2>
+
+    <div class="grid-3">
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#9635;</div>
+        <h3 data-pl="Strony firmowe" data-en="Business websites">Strony firmowe</h3>
+        <p data-pl="Strona, ktora pokazuje kim jestes, co robisz i jak sie z Toba skontaktowac. Czytelna na telefonie, szybka i gotowa na Google."
+           data-en="A site that shows who you are, what you do and how to reach you. Readable on a phone, fast, and ready for Google.">
+           Strona, ktora pokazuje kim jestes, co robisz i jak sie z Toba skontaktowac. Czytelna na telefonie, szybka i gotowa na Google.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#9783;</div>
+        <h3 data-pl="Dwa jezyki" data-en="Two languages">Dwa jezyki</h3>
+        <p data-pl="Pelna wersja polska i angielska z przelacznikiem. Jesli Twoi klienci to Polacy w Irlandii, a jednoczesnie chcesz trafic do Irlandczykow, to jest dokladnie to."
+           data-en="Full Polish and English versions with a switcher. If your customers are Poles in Ireland but you also want to reach Irish clients, this is exactly it.">
+           Pelna wersja polska i angielska z przelacznikiem. Jesli Twoi klienci to Polacy w Irlandii, a jednoczesnie chcesz trafic do Irlandczykow, to jest dokladnie to.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#9906;</div>
+        <h3 data-pl="Widocznosc w Google" data-en="Google visibility">Widocznosc w Google</h3>
+        <p data-pl="Konfiguracja SEO, poprawne opisy, mapa strony i zgloszenie do Google Search Console. Strona ma byc znaleziona, nie tylko ladna."
+           data-en="SEO setup, proper meta descriptions, a sitemap and submission to Google Search Console. The site should be found, not just look good.">
+           Konfiguracja SEO, poprawne opisy, mapa strony i zgloszenie do Google Search Console. Strona ma byc znaleziona, nie tylko ladna.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#9993;</div>
+        <h3 data-pl="Formularze kontaktowe" data-en="Contact forms">Formularze kontaktowe</h3>
+        <p data-pl="Formularz kontaktowy lub zapisow z ochrona przed botami i walidacja pol. Wiadomosci trafiaja prosto na Twoja skrzynke."
+           data-en="A contact or booking form with bot protection and field validation. Messages go straight to your inbox.">
+           Formularz kontaktowy lub zapisow z ochrona przed botami i walidacja pol. Wiadomosci trafiaja prosto na Twoja skrzynke.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#9654;</div>
+        <h3 data-pl="Wideo i galerie" data-en="Video and galleries">Wideo i galerie</h3>
+        <p data-pl="Tlo wideo, galerie zdjec i klipow, odliczanie do wydarzenia. Wszystko zoptymalizowane tak, zeby strona nadal ladowala sie szybko."
+           data-en="Video backgrounds, photo and clip galleries, event countdowns. All optimised so the site still loads fast.">
+           Tlo wideo, galerie zdjec i klipow, odliczanie do wydarzenia. Wszystko zoptymalizowane tak, zeby strona nadal ladowala sie szybko.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon" aria-hidden="true">&#8635;</div>
+        <h3 data-pl="Opieka nad strona" data-en="Site maintenance">Opieka nad strona</h3>
+        <p data-pl="Zmiany tresci, nowe zdjecia, aktualizacje terminow. Mozesz zglaszac zmiany na biezaco albo wykupic stala opieke miesieczna."
+           data-en="Content changes, new photos, updated dates. Request changes as you need them, or take a monthly maintenance plan.">
+           Zmiany tresci, nowe zdjecia, aktualizacje terminow. Mozesz zglaszac zmiany na biezaco albo wykupic stala opieke miesieczna.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Work. Add new projects here as you build them -->
+<section class="section section-alt" id="realizacje">
+  <div class="wrap">
+    <p class="section-tag reveal" data-pl="02 / Realizacje" data-en="02 / Work">02 / Realizacje</p>
+    <h2 class="reveal" data-pl="Zrobione i dziala" data-en="Built and live">Zrobione i dziala</h2>
+
+    <div class="grid-2">
+
+      <article class="work reveal">
+        <div class="work-head">
+          <h3>Polskie Dancingi w Irlandii</h3>
+          <span class="badge" data-pl="Klient" data-en="Client">Klient</span>
+        </div>
+        <p data-pl="Dwujezyczna strona dla organizatora imprez tanecznych w hrabstwie Dublin. Tlo wideo, odliczanie do najblizszego wydarzenia, galeria klipow, kalendarz terminow i formularz opinii z filtrem antybotowym."
+           data-en="A bilingual site for a dance event organiser in County Dublin. Video background, countdown to the next event, clip gallery, event calendar and a review form with bot filtering.">
+           Dwujezyczna strona dla organizatora imprez tanecznych w hrabstwie Dublin. Tlo wideo, odliczanie do najblizszego wydarzenia, galeria klipow, kalendarz terminow i formularz opinii z filtrem antybotowym.</p>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>SEO</li><li>Netlify</li>
+        </ul>
+        <p class="work-result"
+           data-pl="Efekt: pierwsza strona wynikow Google na docelowe frazy w ciagu kilku dni od uruchomienia."
+           data-en="Result: first page of Google for its target search terms within days of launch.">
+           Efekt: pierwsza strona wynikow Google na docelowe frazy w ciagu kilku dni od uruchomienia.</p>
+        <a class="work-link" href="https://polskidancing.netlify.app/" target="_blank" rel="noopener">
+          polskidancing.netlify.app <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="work reveal">
+        <div class="work-head">
+          <h3 data-pl="Sustainable Transport Dublin" data-en="Sustainable Transport Dublin">Sustainable Transport Dublin</h3>
+          <span class="badge badge-alt" data-pl="Projekt" data-en="Project">Projekt</span>
+        </div>
+        <p data-pl="Wielostronicowy serwis o zrownowazonym transporcie z interaktywnym kalkulatorem oszczednosci CO2, tabela danych ze zrodlami i pelna dostepnoscia."
+           data-en="A multi-page site on sustainable transport with an interactive CO2 savings calculator, a sourced data table and full accessibility."
+           >Wielostronicowy serwis o zrownowazonym transporcie z interaktywnym kalkulatorem oszczednosci CO2, tabela danych ze zrodlami i pelna dostepnoscia.</p>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li>
+        </ul>
+        <p class="work-result"
+           data-pl="Ocena: 96 procent. Najlepszy wynik na roku z przedmiotu Web Design and Development."
+           data-en="Graded 96 percent, my highest mark in Web Design and Development.">
+           Ocena: 96 procent. Najlepszy wynik na roku z przedmiotu Web Design and Development.</p>
+        <a class="work-link" href="https://michalszaroma-ui.github.io/sustainable-transport-dublin" target="_blank" rel="noopener">
+          michalszaroma-ui.github.io <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+    </div>
+
+    <!-- Opinie ciagnie sie z arkusza Google. Wpisz TAK w kolumnie Publikuj.
+         Pusty arkusz = sekcja sie nie pokazuje. -->
+    <div class="quotes" id="quotes"></div>
+
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section" id="cennik">
+  <div class="wrap">
+    <p class="section-tag reveal" data-pl="03 / Cennik" data-en="03 / Pricing">03 / Cennik</p>
+    <h2 class="reveal" data-pl="Przejrzyste ceny" data-en="Clear pricing">Przejrzyste ceny</h2>
+    <p class="section-lead reveal"
+       data-pl="Ceny podane nizej to ceny startowe. Dokladna wycena zalezy od liczby podstron i funkcji. Zawsze podaje konkretna kwote przed rozpoczeciem pracy, zeby nie bylo niespodzianek."
+       data-en="The prices below are starting prices. The exact quote depends on the number of pages and features. I always confirm a fixed figure before starting, so there are no surprises.">
+       Ceny podane nizej to ceny startowe. Dokladna wycena zalezy od liczby podstron i funkcji. Zawsze podaje konkretna kwote przed rozpoczeciem pracy, zeby nie bylo niespodzianek.</p>
+
+    <div class="grid-3 pricing">
+
+      <article class="plan reveal">
+        <h3 data-pl="Wizytowka" data-en="One page">Wizytowka</h3>
+        <p class="price">650&nbsp;&euro;</p>
+        <p class="plan-for" data-pl="Dla jednoosobowych firm i uslug" data-en="For sole traders and single services">Dla jednoosobowych firm i uslug</p>
+        <ul>
+          <li data-pl="Jedna strona, wszystko w jednym miejscu" data-en="Single page, everything in one place">Jedna strona, wszystko w jednym miejscu</li>
+          <li data-pl="Formularz kontaktowy" data-en="Contact form">Formularz kontaktowy</li>
+          <li data-pl="Wersja mobilna" data-en="Mobile version">Wersja mobilna</li>
+          <li data-pl="Podstawowa konfiguracja SEO" data-en="Basic SEO setup">Podstawowa konfiguracja SEO</li>
+          <li data-pl="Dwie rundy poprawek" data-en="Two rounds of revisions">Dwie rundy poprawek</li>
+        </ul>
+        <a class="btn btn-ghost" href="#kontakt" data-pl="Zapytaj o wycene" data-en="Ask for a quote">Zapytaj o wycene</a>
+      </article>
+
+      <article class="plan plan-featured reveal">
+        <span class="plan-flag" data-pl="Najczesciej wybierane" data-en="Most popular">Najczesciej wybierane</span>
+        <h3 data-pl="Standard" data-en="Standard">Standard</h3>
+        <p class="price">1200&nbsp;&euro;</p>
+        <p class="plan-for" data-pl="Dla firm, ktore potrzebuja wiecej niz jednej strony" data-en="For businesses that need more than one page">Dla firm, ktore potrzebuja wiecej niz jednej strony</p>
+        <ul>
+          <li data-pl="Od trzech do pieciu podstron" data-en="Three to five pages">Od trzech do pieciu podstron</li>
+          <li data-pl="Galeria zdjec" data-en="Photo gallery">Galeria zdjec</li>
+          <li data-pl="Formularz kontaktowy z ochrona antybotowa" data-en="Contact form with bot protection">Formularz kontaktowy z ochrona antybotowa</li>
+          <li data-pl="Pelna konfiguracja SEO" data-en="Full SEO setup">Pelna konfiguracja SEO</li>
+          <li data-pl="Zgloszenie do Google Search Console" data-en="Google Search Console submission">Zgloszenie do Google Search Console</li>
+          <li data-pl="Dwie rundy poprawek" data-en="Two rounds of revisions">Dwie rundy poprawek</li>
+        </ul>
+        <a class="btn btn-primary" href="#kontakt" data-pl="Zapytaj o wycene" data-en="Ask for a quote">Zapytaj o wycene</a>
+      </article>
+
+      <article class="plan reveal">
+        <h3 data-pl="Premium" data-en="Premium">Premium</h3>
+        <p class="price">1800&nbsp;&euro;</p>
+        <p class="plan-for" data-pl="Pelny zakres, tak jak Polskie Dancingi" data-en="The full build, like Polskie Dancingi">Pelny zakres, tak jak Polskie Dancingi</p>
+        <ul>
+          <li data-pl="Wszystko z pakietu Standard" data-en="Everything in Standard">Wszystko z pakietu Standard</li>
+          <li data-pl="Pelna wersja polska i angielska" data-en="Full Polish and English versions">Pelna wersja polska i angielska</li>
+          <li data-pl="Tlo wideo i galeria klipow" data-en="Video background and clip gallery">Tlo wideo i galeria klipow</li>
+          <li data-pl="Odliczanie do wydarzenia lub kalendarz" data-en="Event countdown or calendar">Odliczanie do wydarzenia lub kalendarz</li>
+          <li data-pl="Formularz opinii lub zapisow" data-en="Review or booking form">Formularz opinii lub zapisow</li>
+          <li data-pl="Dwie rundy poprawek" data-en="Two rounds of revisions">Dwie rundy poprawek</li>
+        </ul>
+        <a class="btn btn-ghost" href="#kontakt" data-pl="Zapytaj o wycene" data-en="Ask for a quote">Zapytaj o wycene</a>
+      </article>
+
+    </div>
+
+    <div class="extras reveal">
+      <div>
+        <h4 data-pl="Opieka nad strona" data-en="Maintenance">Opieka nad strona</h4>
+        <p><strong>35&nbsp;&euro;</strong> <span data-pl="miesiecznie" data-en="per month">miesiecznie</span></p>
+        <p class="small" data-pl="Biezace zmiany tresci, aktualizacje i monitoring. Bez zobowiazan, mozna zrezygnowac w kazdej chwili."
+           data-en="Ongoing content changes, updates and monitoring. No commitment, cancel any time.">
+           Biezace zmiany tresci, aktualizacje i monitoring. Bez zobowiazan, mozna zrezygnowac w kazdej chwili.</p>
+      </div>
+      <div>
+        <h4 data-pl="Pojedyncza zmiana" data-en="One off change">Pojedyncza zmiana</h4>
+        <p><strong>45&nbsp;&euro;</strong></p>
+        <p class="small" data-pl="Jesli wolisz placic tylko wtedy, kiedy faktycznie cos trzeba zmienic."
+           data-en="If you would rather pay only when something actually needs changing.">
+           Jesli wolisz placic tylko wtedy, kiedy faktycznie cos trzeba zmienic.</p>
+      </div>
+      <div>
+        <h4 data-pl="Domena i hosting" data-en="Domain and hosting">Domena i hosting</h4>
+        <p><strong data-pl="po kosztach" data-en="at cost">po kosztach</strong></p>
+        <p class="small" data-pl="Domena to okolo 15 euro rocznie. Hosting dla wiekszosci stron jest darmowy i nie doliczam do niego marzy."
+           data-en="A domain costs around 15 euro a year. Hosting is free for most sites and I do not mark it up.">
+           Domena to okolo 15 euro rocznie. Hosting dla wiekszosci stron jest darmowy i nie doliczam do niego marzy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section section-alt" id="jak">
+  <div class="wrap">
+    <p class="section-tag reveal" data-pl="04 / Jak to dziala" data-en="04 / Process">04 / Jak to dziala</p>
+    <h2 class="reveal" data-pl="Cztery kroki" data-en="Four steps">Cztery kroki</h2>
+
+    <ol class="steps">
+      <li class="reveal">
+        <span class="step-num">01</span>
+        <h3 data-pl="Rozmowa" data-en="A conversation">Rozmowa</h3>
+        <p data-pl="Piszesz do mnie i mowisz czego potrzebujesz. Zadaje kilka pytan o Twoja dzialalnosc i o to, kogo chcesz przyciagnac."
+           data-en="You get in touch and tell me what you need. I ask a few questions about your business and who you want to reach.">
+           Piszesz do mnie i mowisz czego potrzebujesz. Zadaje kilka pytan o Twoja dzialalnosc i o to, kogo chcesz przyciagnac.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-num">02</span>
+        <h3 data-pl="Wycena" data-en="A quote">Wycena</h3>
+        <p data-pl="Dostajesz konkretna kwote i termin. Zaczynamy po wplacie 50 procent, reszta platna przy uruchomieniu strony."
+           data-en="You get a fixed price and a timeline. Work starts on a 50 percent deposit, the rest is due at launch.">
+           Dostajesz konkretna kwote i termin. Zaczynamy po wplacie 50 procent, reszta platna przy uruchomieniu strony.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-num">03</span>
+        <h3 data-pl="Budowa" data-en="The build">Budowa</h3>
+        <p data-pl="Buduje strone i pokazuje Ci podglad na zywo. Mowisz co poprawic. W cenie sa dwie rundy poprawek."
+           data-en="I build the site and show you a live preview. You tell me what to change. Two rounds of revisions are included.">
+           Buduje strone i pokazuje Ci podglad na zywo. Mowisz co poprawic. W cenie sa dwie rundy poprawek.</p>
+      </li>
+      <li class="reveal">
+        <span class="step-num">04</span>
+        <h3 data-pl="Uruchomienie" data-en="Launch">Uruchomienie</h3>
+        <p data-pl="Podpinam domene, zglaszam strone do Google i przekazuje Ci wszystkie dostepy. Strona jest Twoja."
+           data-en="I connect the domain, submit the site to Google and hand over all the access details. The site is yours.">
+           Podpinam domene, zglaszam strone do Google i przekazuje Ci wszystkie dostepy. Strona jest Twoja.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="kontakt">
+  <div class="wrap contact-wrap">
+    <div class="contact-copy">
+      <p class="section-tag reveal" data-pl="05 / Kontakt" data-en="05 / Contact">05 / Kontakt</p>
+      <h2 class="reveal" data-pl="Porozmawiajmy" data-en="Let us talk">Porozmawiajmy</h2>
+      <p class="reveal"
+         data-pl="Napisz w dwoch zdaniach czym sie zajmujesz i czego potrzebujesz. Odpowiadam zwykle tego samego dnia. Rozmawiam po polsku i po angielsku."
+         data-en="Tell me in two sentences what you do and what you need. I usually reply the same day. I work in Polish and English.">
+         Napisz w dwoch zdaniach czym sie zajmujesz i czego potrzebujesz. Odpowiadam zwykle tego samego dnia. Rozmawiam po polsku i po angielsku.</p>
+
+      <ul class="contact-list reveal">
+        <li><span aria-hidden="true">&#9993;</span> <a href="mailto:michalszaroma@gmail.com">michalszaroma@gmail.com</a></li>
+        <li><span aria-hidden="true">&#9742;</span> <a href="tel:+353830488321">083 048 8321</a></li>
+        <li><span aria-hidden="true">&#9906;</span> Dublin, Irlandia</li>
+      </ul>
+    </div>
+
+    <!-- Idzie do Apps Script. Podmien YOUR_DEPLOYMENT_ID tu i w script.js.
+         Nie dodawaj naglowka Content-Type, bo Apps Script nie obsluzy preflightu. -->
+    <form class="form reveal" id="contact-form"
+          action="https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"
+          method="POST" novalidate>
+      <div class="field">
+        <label for="name" data-pl="Imie" data-en="Name">Imie</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+        <span class="error" data-error="name"></span>
+      </div>
+
+      <div class="field">
+        <label for="email" data-pl="Email" data-en="Email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <span class="error" data-error="email"></span>
+      </div>
+
+      <div class="field">
+        <label for="type" data-pl="Rodzaj strony" data-en="Type of site">Rodzaj strony</label>
+        <select id="type" name="type">
+          <option value="wizytowka" data-pl="Wizytowka (650 euro)" data-en="One page (650 euro)">Wizytowka (650 euro)</option>
+          <option value="standard" data-pl="Standard (1200 euro)" data-en="Standard (1200 euro)">Standard (1200 euro)</option>
+          <option value="premium" data-pl="Premium (1800 euro)" data-en="Premium (1800 euro)">Premium (1800 euro)</option>
+          <option value="nie wiem" data-pl="Jeszcze nie wiem" data-en="Not sure yet">Jeszcze nie wiem</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message" data-pl="Wiadomosc" data-en="Message">Wiadomosc</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error" data-error="message"></span>
+      </div>
+
+      <!-- Honeypot. Real people never see this, bots fill it in. -->
+      <div class="hp" aria-hidden="true">
+        <label for="company">Nie wypelniaj tego pola</label>
+        <input type="text" id="company" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button class="btn btn-primary btn-block" type="submit"
+              data-pl="Wyslij zapytanie" data-en="Send enquiry">Wyslij zapytanie</button>
+
+      <p class="form-status" id="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> Michal Szaroma &middot; Dublin</p>
+    <p>
+      <a href="https://michalszaroma-ui.github.io/portfolio/" target="_blank" rel="noopener"
+         data-pl="Portfolio IT i cyberbezpieczenstwo" data-en="IT and cybersecurity portfolio">Portfolio IT i cyberbezpieczenstwo</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
